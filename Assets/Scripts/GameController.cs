@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour {
                 drag_v = newpos.x - oldpos.x;
                 oldpos = newpos;
             }
-            ScrollSpeed += drag_v * Time.deltaTime * 0.2f;
+            ScrollSpeed += drag_v * Time.deltaTime * 0.7f;
             nut_u -= drag_v * Time.deltaTime * 0.1f;
             nut.material.SetTextureOffset("_MainTex", new Vector2(nut_u, 0f));
             //
